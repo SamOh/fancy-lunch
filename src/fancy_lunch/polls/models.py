@@ -23,6 +23,7 @@ class Question(models.Model):
 @python_2_unicode_compatible
 class Choice(models.Model):
 	question = models.ForeignKey(Question, on_delete=models.CASCADE)
+	distance = models.CharField(max_length=200, null=True)
 	choice_text = models.CharField(max_length=200)
 	votes = models.IntegerField(default=0)
 	def __str__(self):
