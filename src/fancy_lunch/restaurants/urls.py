@@ -8,5 +8,5 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^', views.current_datetime),
+    url(r'^$', views.current_datetime),
 ]
