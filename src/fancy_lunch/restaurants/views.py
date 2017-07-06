@@ -1,11 +1,12 @@
 from django.http import HttpResponse
 from django.template.loader import get_template
 import datetime
+from polls.models import Choice, Question
 
 from googleplaces import GooglePlaces, types, lang
 
 def get_food(request):
-    YOUR_API_KEY = 'AIzaSyDRetrdmrJlUPnJkiWAkEjp3ouxznXiwdw'
+    YOUR_API_KEY = 'AIzaSyBznqCQUV501t1F1cM7Wasce3_W6PzVmHs'
 
     names = []
     ratings = []
@@ -35,6 +36,9 @@ def get_food(request):
         phones.append(str(place.local_phone_number))
         websites.append(str(place.website))
 
+        c = Choice(question=Question.objects.get(id=1), distance = 'NA', rating = place.rating,
+        choice_text = place.name, votes = 0)
+        c.save()
         # Getting place photos
         i = 0
         # for photo in place.photos:
