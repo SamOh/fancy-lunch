@@ -24,7 +24,7 @@ def get_food(request):
     if query_result.has_attributions:
         print query_result.html_attributions
 
-
+    Choice.objects.all().delete()
     for place in query_result.places:
         # Returned places from a query are place summaries.
         names.append(place.name)
