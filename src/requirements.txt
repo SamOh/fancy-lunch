@@ -1,5 +1,2 @@
-Django==1.11.2
-gevent==1.1.2
-gunicorn==19.6.0
-psycopg2==2.6.2
-virtualenv==15.1.0
+Django==1.11.3
+pytz==2017.2
