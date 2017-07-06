@@ -1,5 +1,5 @@
 """
-Django settings for fancy_lunch project.
+Django settings for restaurants project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -49,9 +49,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'fancy_lunch.urls'
+ROOT_URLCONF = 'restaurants.urls'
 
-WSGI_APPLICATION = 'fancy_lunch.wsgi.application'
+WSGI_APPLICATION = 'restaurants.wsgi.application'
 
 TEMPLATES = [
     {
