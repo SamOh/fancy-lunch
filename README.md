@@ -1,2 +1,2 @@
 # fancy-lunch
-fancy lunch for jpl interns
+A simple django/python application that allows users to vote on a location to go out for lunch, and then they can see a list of votes/locations. The locations are generated dynamically using the Google Maps API, so all the information about restaurants/ratings and distance from JPL is posted for assistance with a vote. This was a quick 3-4hr project that we created for fun to help JPL employees decide where to eat for lunch on Fridays.
